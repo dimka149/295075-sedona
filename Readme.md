@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Кыров](https://up.htmlacademy.ru/htmlcss/16/user/295075).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
