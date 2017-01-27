@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Поиск гостиниц Седона</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+<!-- Шапка -->
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul class="main-list">
+            <li class="main-list__item">
+              <a class="main-list__link" href="#">Информация</a>
+            </li>
+            <li class="main-list__item">
+              <a class="main-list__link" href="#">Фото и видео</a>
+            </li>
+            <li class="main-list__item">
+              <a class="main-list__link" href="#">Карта штата</a>
+            </li>
+            <li class="main-list__item main-list__item--active">
+              Гостиницы
+            </li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="http://placehold.it/150x100" alt="Главная">
+          </a>
+        </div>
+      </div>
+    </header>
+<!-- Содержимое -->
+    <main class="page-main">
+      <div class="container">
+  <!-- Фильтр -->
+        <form class="page-filter" action="https://echo.htmlacademy.ru" method="get">
+    <!-- Фильтр часть 1 -->
+          <div class="filter-part">
+            <ul class="filter-list">
+              <h3 class="filter-list__header">
+              Инфраструктура:</h3>
+              <li class="filter-list__item">
+                <label>
+                  <input type="checkbox" checked> 
+                  Бассейн
+                </label>
+              </li>
+              <li class="filter-list__item">
+                <label>
+                  <input type="checkbox"> 
+                  Парковка
+                </label>
+              </li>
+              <li class="filter-list__item">
+                <label>
+                  <input type="checkbox"> 
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </div>
+    <!-- Фильтр часть 2 -->
+          <div class="filter-part">
+            <ul class="filter-list">
+              <h3 class="filter-list__header">Тип жилья:</h3>
+              <li class="filter-list__item">
+                <label>
+                  <input type="checkbox" checked> 
+                  Гостиница
+                </label>
+              </li>
+              <li class="filter-list__item">
+                <label>
+                  <input type="checkbox" checked> 
+                  Мотель
+                </label>
+              </li>
+              <li class="filter-list__item">
+                <label>
+                  <input type="checkbox" checked> 
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </div>
+    <!-- Фильтр часть 3 -->      
+          <div class="filter-part__range">
+            <h3>Стоимостьв сутки (р):</h3>
+            <div class="price-controls">
+              <input class="min-price" type="text" value="От 0">
+              <input class="max-price" type="text" value="До 3000">
+            </div>
+    <!-- Бегунок -->
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale"><div style="width:150px;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+            </div>
+            <input type="submit" value="Показать">
+          </div>
+        </form>
+      </div>
+  <!-- Сортировка -->
+      <div class="page-sort">
+        <h2>Найдено: 3</h2>
+        <span>Сортировка:</span>
+        <ul class="page-sort__list">
+          <li class="page-sort__item">
+            <a href="#">По цене</a>
+          </li>
+          <li class="page-sort__item">
+            <a href="#">По типу</a>
+          </li>
+          <li class="page-sort__item">
+            <a href="#">По рейтингу</a>
+          </li>
+        </ul>
+      </div>
+  <!-- Блок найденых гостиниц -->
+      <div class="search-result">
+        <div>
+          <a href="#">
+            <img src="http://placehold.it/150x100" alt="Amara resort & spa">
+            Amara resort &amp; spa</a>
+            <p>Гостиница <span>от 4000 р</span></p>
+            <a class="details-item" href="#">Подробнее</a>
+            <a class="reserv-item" href="#">Забронировать</a>
+            <div>
+              <span class="item-rating">Рейтинг: 8.5</span>
+            </div>
+        </div>
+        <div>
+          <a href="#">
+            <img src="http://placehold.it/150x100" alt="Desert quail inn">
+            Desert quail inn</a>
+            <p>Мотель <span>от 3000 р</span></p>
+            <a class="details-item" href="#">Подробнее</a>
+            <a class="reserv-item" href="#">Забронировать</a>
+            <div>
+              <span class="item-rating">Рейтинг: 8.9</span>
+            </div>
+        </div>
+        <div>
+          <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
+          <a href="#">Villas at poco diablo</a>
+          <p>Апартаменты <span>от 2000 р</span></p>
+          <a class="details-item" href="#">Подробнее</a>
+          <a class="reserv-item" href="#">Забронировать</a>
+          <div>
+            <span class="item-rating">Рейтинг: 9.2</span>
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- Подвал -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-contacts">
+          <p><a href="#">#VisitSedona</a></p>
+        </div>
+        <div class="footer-social">
+          <a class="btn-social-twitter" href="#">twitter</a>
+          <a class="btn-social-facebook" href="#">facebook</a>
+          <a class="btn-social-youtube" href="#">youtube</a>
+        </div>
+        <div class="footer-copyright">
+          <p>
+            Website by<a class="footer-copyright" href="#">html academy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
