@@ -25,11 +25,9 @@
             </li>
           </ul>
         </nav>
-        <div class="logo">
-          <a href="index.html">
-            <img src="http://placehold.it/150x100" alt="Главная">
-          </a>
-        </div>
+        <a href="index.html">
+          <img src="http://placehold.it/150x100" alt="Главная">
+        </a>
       </div>
     </header>
 <!-- Содержимое -->
@@ -39,9 +37,9 @@
         <form class="page-filter" action="https://echo.htmlacademy.ru" method="get">
     <!-- Фильтр часть 1 -->
           <div class="filter-part">
-            <ul class="filter-list">
-              <h3 class="filter-list__header">
+            <h3 class="filter-list__header">
               Инфраструктура:</h3>
+            <ul class="filter-list">
               <li class="filter-list__item">
                 <label>
                   <input type="checkbox" checked> 
@@ -64,8 +62,8 @@
           </div>
     <!-- Фильтр часть 2 -->
           <div class="filter-part">
+            <h3 class="filter-list__header">Тип жилья:</h3>
             <ul class="filter-list">
-              <h3 class="filter-list__header">Тип жилья:</h3>
               <li class="filter-list__item">
                 <label>
                   <input type="checkbox" checked> 
@@ -88,7 +86,7 @@
           </div>
     <!-- Фильтр часть 3 -->      
           <div class="filter-part__range">
-            <h3>Стоимостьв сутки (р):</h3>
+            <h3>Стоимость в сутки (р):</h3>
             <div class="price-controls">
               <input class="min-price" type="text" value="От 0">
               <input class="max-price" type="text" value="До 3000">
@@ -120,58 +118,50 @@
             <a href="#">По рейтингу</a>
           </li>
         </ul>
+        <span class="page-sort__order"></span>
+        <span class="page-sort__order"></span>
       </div>
   <!-- Блок найденых гостиниц -->
       <div class="search-result">
-        <div>
-          <a href="#">
-            <img src="http://placehold.it/150x100" alt="Amara resort & spa">
-            Amara resort &amp; spa</a>
-            <p>Гостиница <span>от 4000 р</span></p>
-            <a class="details-item" href="#">Подробнее</a>
-            <a class="reserv-item" href="#">Забронировать</a>
-            <div>
-              <span class="item-rating">Рейтинг: 8.5</span>
-            </div>
-        </div>
-        <div>
-          <a href="#">
-            <img src="http://placehold.it/150x100" alt="Desert quail inn">
-            Desert quail inn</a>
-            <p>Мотель <span>от 3000 р</span></p>
-            <a class="details-item" href="#">Подробнее</a>
-            <a class="reserv-item" href="#">Забронировать</a>
-            <div>
-              <span class="item-rating">Рейтинг: 8.9</span>
-            </div>
-        </div>
-        <div>
-          <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
-          <a href="#">Villas at poco diablo</a>
-          <p>Апартаменты <span>от 2000 р</span></p>
-          <a class="details-item" href="#">Подробнее</a>
-          <a class="reserv-item" href="#">Забронировать</a>
-          <div>
-            <span class="item-rating">Рейтинг: 9.2</span>
-          </div>
-        </div>
+        <a href="#">
+          <img src="http://placehold.it/150x100" alt="Amara resort & spa">
+          Amara resort &amp; spa</a>
+        <p>Гостиница <span>от 4000 р</span></p>
+        <a class="details-item" href="#">Подробнее</a>
+        <a class="reserv-item" href="#">Забронировать</a>
+        <span class="item-rating">Рейтинг: 8.5</span>
+      </div>
+      <div>
+        <a href="#">
+          <img src="http://placehold.it/150x100" alt="Desert quail inn">
+          Desert quail inn</a>
+        <p>Мотель <span>от 3000 р</span></p>
+        <a class="details-item" href="#">Подробнее</a>
+        <a class="reserv-item" href="#">Забронировать</a>
+        <span class="item-rating">Рейтинг: 8.9</span>
+      </div>
+      <div>
+        <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
+        <a href="#">Villas at poco diablo</a>
+        <p>Апартаменты <span>от 2000 р</span></p>
+        <a class="details-item" href="#">Подробнее</a>
+        <a class="reserv-item" href="#">Забронировать</a>
+        <span class="item-rating">Рейтинг: 9.2</span>
       </div>
     </main>
 <!-- Подвал -->
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footer-contacts">
-          <p><a href="#">#VisitSedona</a></p>
+    <footer class="footer-page">
+      <div class="footer-page__container">
+        <div class="footer-page__hashtag">
+          <p class="footer-page__hashtag-name"><a href="#">#VisitSedona</a></p>
         </div>
-        <div class="footer-social">
-          <a class="btn-social-twitter" href="#">twitter</a>
-          <a class="btn-social-facebook" href="#">facebook</a>
-          <a class="btn-social-youtube" href="#">youtube</a>
+        <div class="footer-page__social">
+          <a class="btn-social__twitter" href="#">twitter</a>
+          <a class="btn-social__facebook" href="#">facebook</a>
+          <a class="btn-social__youtube" href="#">youtube</a>
         </div>
-        <div class="footer-copyright">
-          <p>
-            Website by<a class="footer-copyright" href="#">html academy</a>
-          </p>
+        <div class="footer-page__copyright">
+          <p>Website by<a class="footer-page__copyright-item" href="#">html academy</a></p>
         </div>
       </div>
     </footer>

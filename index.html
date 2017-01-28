@@ -8,7 +8,7 @@
   <body>
 <!-- Шапка -->
     <header class="page-header">
-      <div class="container">
+      <div class="page-header__container">
         <nav class="main-navigation">
           <ul class="main-list">
             <li class="main-list__item">
@@ -34,107 +34,101 @@
     </header>
 <!-- Содержимое -->
 		<main class="page-main">
-      <div class="container">
-        <div>
-			    <div>
-				    <img src="http://placehold.it/150x100" alt="Welcom Sedona">
-			    </div>
-          <div>
-            <img src="http://placehold.it/150x100" alt="Sedona">
-          </div>
-          <div>
-            <img src="http://placehold.it/150x100" alt="Grand Canyon">
-          </div>
+      <div class="page-main__container">
+        <div class="picture">
+				    <img class="page-picture__top" src="http://placehold.it/150x100" alt="Welcom -to thegorgeous-">
+            <img class="page-picture__middle" src="http://placehold.it/150x100" alt="Sedona">
+            <img class="page-picture__bottom" src="http://placehold.it/150x100" alt="Because the Grand Canyon sucks">
         </div>
   <!-- Вступление -->
 			  <div class="intro">
-    		  <p><b>Седона - Небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
-				  <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    		  <h2 class="intro-name">Седона - Небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+				  <p class="intro-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     	  </div>
   <!-- Первый ряд картинка город -->
     	  <div class="reason">
-    		  <div class="col-text">
-    			  <p><b>Настоящий Городок</b></p>
+    		  <div class="reason-item">
+    			  <b class="reason-name">Настоящий Городок</b>
 					  <p>— №1 —</p>
 					  <p>Седона не атракцион для туристов, там течет своя жизнь</p>
     		  </div>
-    		  <div class="col-picture">
+    		  <div class="reason-picture">
 					  <img src="http://placehold.it/150x100" alt="Hotel">
     		  </div>
     	  </div>
   <!-- Второй ряд с советами -->
     	  <div class="advice">
-    		  <div class="col-1">
-    			   <p><b>Жилье</b></p>
-					   <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    		  <div class="advice-item">
+    			  <b class="advice-name">Жилье</b>
+					  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
     		  </div>
-    		  <div class="col-2">
-    			  <p><b>Еда</b></p>
+    		  <div class="advice-item">
+    			  <b class="advice-name">Еда</b>
 					  <p>Всегда заказывайте фирменный бургер, вы не разочаруйетесь!</p>
     		  </div>
-    		  <div class="col-3">
-    			  <p><b>Сувениры</b></p>
+    		  <div class="advice-item">
+    			  <b class="advice-name">Сувениры</b>
 					  <p>Не только китайского, но и местного производства!</p>
     		  </div>
 			  </div>
   <!-- Третий ряд картинка каньон-->
     	  <div class="reason">
-				  <div class="col-picture">
+				  <div class="reason-picture">
 					  <img src="http://placehold.it/150x100" alt="Canyon">
     		  </div>
-    		  <div class="col-text">
-    			  <p><b>Там есть Мост Дьявола</b></p>
+    		  <div class="reason-item">
+    			  <b class="reason-name">Там есть Мост Дьявола</b>
 					  <p>— №2 —</p>
 					  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				  </div>
 			  </div>
   <!-- Четвертый ряд текст-->
 			  <div class="vision">
-				  <div class="col-1">
-					  <p><b>Небольшая площадь</b></p>
+				  <div class="vision-item">
+					  <b class="vision-name">Небольшая площадь</b>
 					  <p>— №3 —</p>
 					  <p>ВСЕ достопримечательности находятся очень близко</p>
 				  </div>
-				  <div class="col-2">
-					  <p><b>Красивая дорога</b></p>
+				  <div class="vision-item">
+					  <b class="vision-name">Красивая дорога</b>
 					  <p>— №4 —</p>
 					  <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
 				  </div>
-				  <div class="col-3">
-					  <p><b>Мало туристов</b></p>
+				  <div class="vision-item">
+					  <b class="vision-name">>Мало туристов</b>
             <p>— №5 —</p>
 					  <p>Большинство едет в Гранд Каньон и толпится там</p>
 				  </div>
     	  </div>
   <!-- Прилюдия формы -->
-    	  <div class="start-form">
-    		  <div class="title-form">
-    			  <p><b>Заинтересовались?</b></p>
-					  <p>Укажите предполагаемые даты поездки, 
+    	  <div class="interest">
+    		  <div class="interest-title">
+    			  <b class="interest-name">Заинтересовались?</b>
+					  <p class="interest-paragraph">Укажите предполагаемые даты поездки, 
 						и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				  </div>
 			  </div>
 	<!-- Форма -->
 			  <div class="form">
+        	<div class="form-title">
+					  <button class="form-btn__show-form" type="button">Поиск гостиницы в Седоне</button>
+					</div>
           <form action="https://echo.htmlacademy.ru" method="post">
-        	  <div class="form-title">
-						  <button class="btn form-show" type="button">Поиск гостиницы в Седоне</button>
-					  </div>
         	  <div>
-						  <label>Дата заезда
-						    <input type="text" name="check-in" id="check-in" value="24 апреля 2017">
+						  <label class="form-text__name">Дата заезда
+						   <input class="form-text__input" type="text" name="check-in" id="check-in" value="24 апреля 2017">
 						  </label><br>
-          	  <label>Дата выезда
-          	    <input type="text" name="departure" id="departure" value="4 июля 2017">
+          	  <label class="form-text__name">Дата выезда
+          	    <input class="form-text__input" type="text" name="departure" id="departure" value="4 июля 2017">
           	  </label><br>
-          	  <label>Взрослые
-          	    <input type="text" name="adults" id="adults" value="2">
+          	  <label class="form-text__name">Взрослые
+          	    <input class="form-text__input" type="text" name="adults" id="adults" value="2">
           	  </label>
-          	  <label>Дети
-          	    <input type="text" name="children" id="children" value="0">
+          	  <label class="form-text__name">Дети
+          	    <input class="form-text__input" type="text" name="children" id="children" value="0">
               </label>
 					  </div>
-            <div class="form-btn">
+            <div class="form-btn__submit">
 					    <input type="submit" value="Найти">
             </div>
           </form>
@@ -148,20 +142,18 @@
       </div>
     </main>
 <!-- Подвал -->
-	  <footer class="main-footer">
-      <div class="container">
-        <div class="footer-contacts">
-        	<p><a href="#">#VisitSedona</a></p>
+	  <footer class="footer-page">
+      <div class="footer-page__container">
+        <div class="footer-page__hashtag">
+          <p class="footer-page__hashtag-name"><a href="#">#VisitSedona</a></p>
         </div>
-        <div class="footer-social">
-          <a class="btn-social-twitter" href="#">twitter</a>
-          <a class="btn-social-facebook" href="#">facebook</a>
-					<a class="btn-social-youtube" href="#">youtube</a>
+        <div class="footer-page__social">
+          <a class="btn-social__twitter" href="#">twitter</a>
+          <a class="btn-social__facebook" href="#">facebook</a>
+          <a class="btn-social__youtube" href="#">youtube</a>
         </div>
-        <div class="footer-copyright">
-        	<p>
-            Website by<a class="footer-copyright" href="#">html academy</a>
-          </p>
+        <div class="footer-page__copyright">
+          <p>Website by<a class="footer-page__copyright-item" href="#">html academy</a></p>
         </div>
       </div>
     </footer>
