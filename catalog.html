@@ -7,96 +7,97 @@
   </head>
   <body>
 <!-- Шапка -->
-    <header class="page-header">
+    <header class="header">
       <div class="container">
-        <nav class="main-navigation">
-          <ul class="main-list">
-            <li class="main-list__item">
-              <a class="main-list__link" href="#">Информация</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Информация</a>
             </li>
-            <li class="main-list__item">
-              <a class="main-list__link" href="#">Фото и видео</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Фото и видео</a>
             </li>
-            <li class="main-list__item">
-              <a class="main-list__link" href="#">Карта штата</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Карта штата</a>
             </li>
-            <li class="main-list__item main-list__item--active">
+            <li class="nav__item--active">
               Гостиницы
             </li>
           </ul>
         </nav>
-        <a href="index.html">
-          <img src="http://placehold.it/150x100" alt="Главная">
+        <a class="nav__link" href="index.html">
+          <img class="nav__logo" src="img/logo-pict-triangle.png" width="138" height="70" alt="Логотип">
         </a>
       </div>
     </header>
 <!-- Содержимое -->
-    <main class="page-main">
+    <main class="main">
       <div class="container">
   <!-- Фильтр -->
-        <form class="page-filter" action="https://echo.htmlacademy.ru" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
     <!-- Фильтр часть 1 -->
-          <div class="filter-part">
-            <h3 class="filter-list__header">
-              Инфраструктура:</h3>
-            <ul class="filter-list">
-              <li class="filter-list__item">
-                <label>
-                  <input type="checkbox" checked> 
+          <div class="filter">
+            <h2 class="filter__title">Инфраструктура:</h2>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__ladel">
+                  <input class="filter__input" type="checkbox" checked> 
                   Бассейн
                 </label>
               </li>
-              <li class="filter-list__item">
-                <label>
-                  <input type="checkbox"> 
+              <li class="filter__item">
+                <label class="filter__ladel">
+                  <input class="filter__input" type="checkbox"> 
                   Парковка
                 </label>
               </li>
-              <li class="filter-list__item">
-                <label>
-                  <input type="checkbox"> 
+              <li class="filter__item">
+                <label class="filter__ladel">
+                  <input class="filter__input" type="checkbox"> 
                   Wi-Fi
                 </label>
               </li>
             </ul>
           </div>
     <!-- Фильтр часть 2 -->
-          <div class="filter-part">
-            <h3 class="filter-list__header">Тип жилья:</h3>
-            <ul class="filter-list">
-              <li class="filter-list__item">
-                <label>
-                  <input type="checkbox" checked> 
+          <div class="filter">
+            <h2 class="filter__title">Тип жилья:</h2>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__ladel">
+                  <input class="filter__input" type="checkbox" checked> 
                   Гостиница
                 </label>
               </li>
-              <li class="filter-list__item">
-                <label>
-                  <input type="checkbox" checked> 
+              <li class="filter__item">
+                <label class="filter__ladel">
+                  <input class="filter__input" type="checkbox" checked> 
                   Мотель
                 </label>
               </li>
-              <li class="filter-list__item">
-                <label>
-                  <input type="checkbox" checked> 
+              <li class="filter__item">
+                <label class="filter__ladel">
+                  <input class="filter__input" type="checkbox" checked> 
                   Апартаменты
                 </label>
               </li>
             </ul>
           </div>
     <!-- Фильтр часть 3 -->      
-          <div class="filter-part__range">
-            <h3>Стоимость в сутки (р):</h3>
-            <div class="price-controls">
-              <input class="min-price" type="text" value="От 0">
-              <input class="max-price" type="text" value="До 3000">
+          <div class="filter-range">
+            <h2 class="filter-range__title">Стоимость в сутки (р):</h2>
+            <div class="filter-range__price--controls">
+              <input class="filter-range__price--min" type="text" placeholder="От 0">
+              <input class="filter-range__price--max" type="text" placeholder="До 3000">
             </div>
     <!-- Бегунок -->
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale"><div style="width:150px;" class="bar"></div></div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+            <div class="filter-range__slider">
+              <div class="filter-range__slider--controls">
+                <div class="filter-range__slider--scale">
+                  <div class="filter-range__bar" style="width:150px;"></div>
+                </div>
+                <div class="filter-range__toggle--min"></div>
+                <div class="filter-range__toggle--max"></div>
               </div>
             </div>
             <input type="submit" value="Показать">
@@ -105,68 +106,65 @@
       </div>
   <!-- Сортировка -->
       <div class="page-sort">
-        <h2>Найдено: 3</h2>
-        <span>Сортировка:</span>
+        <h2 class="page-sort__title">Найдено: 3</h2>
+        <p>Сортировка:</p>
         <ul class="page-sort__list">
-          <li class="page-sort__item">
-            <a href="#">По цене</a>
+          <li class="page-sort__item--active">По цене
           </li>
           <li class="page-sort__item">
-            <a href="#">По типу</a>
+            <a class="page-sort__link" href="#">По типу</a>
           </li>
           <li class="page-sort__item">
-            <a href="#">По рейтингу</a>
+            <a class="page-sort__link" href="#">По рейтингу</a>
           </li>
         </ul>
-        <span class="page-sort__order"></span>
-        <span class="page-sort__order"></span>
+        <a class="page__order" href="#"></a>
+        <a class="page__order--active"></a>
       </div>
   <!-- Блок найденых гостиниц -->
-      <div class="search-result">
-        <a href="#">
-          <img src="http://placehold.it/150x100" alt="Amara resort & spa">
-          Amara resort &amp; spa</a>
-        <p>Гостиница <span>от 4000 р</span></p>
-        <a class="details-item" href="#">Подробнее</a>
-        <a class="reserv-item" href="#">Забронировать</a>
-        <span class="item-rating">Рейтинг: 8.5</span>
+      <div class="results">
+        <a class="results__link--img" href="#">
+          <img src="img/hotel-photo-img.jpg" width="135" height="90" alt="Amara resort & spa">
+          <h2 class="results__title">Amara resort &amp; spa</h2></a>
+        <p>Гостиница от 4000 р</p>
+        <a class="results__link--details" href="#">Подробнее</a>
+        <a class="results__link--reserv" href="#">Забронировать</a>
+        <p class="results__rating">Рейтинг: 8.5</p>
       </div>
       <div>
-        <a href="#">
-          <img src="http://placehold.it/150x100" alt="Desert quail inn">
-          Desert quail inn</a>
-        <p>Мотель <span>от 3000 р</span></p>
-        <a class="details-item" href="#">Подробнее</a>
-        <a class="reserv-item" href="#">Забронировать</a>
-        <span class="item-rating">Рейтинг: 8.9</span>
+        <a class="results__link--img" href="#">
+          <img src="img/motel-photo-img.jpg" width="135" height="90" alt="Desert quail inn">
+          <h2 class="results__title">Desert quail inn</h2></a>
+        <p>Мотель от 3000 р</p>
+        <a class="results__link--details" href="#">Подробнее</a>
+        <a class="results__link--reserv" href="#">Забронировать</a>
+        <p class="results__rating">Рейтинг: 8.9</p>
       </div>
       <div>
-        <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
-        <a href="#">Villas at poco diablo</a>
-        <p>Апартаменты <span>от 2000 р</span></p>
-        <a class="details-item" href="#">Подробнее</a>
-        <a class="reserv-item" href="#">Забронировать</a>
-        <span class="item-rating">Рейтинг: 9.2</span>
+        <a class="results__link--img" href="#">
+          <img src="img/apartments-photo-img.jpg" width="135" height="90" alt="Villas at poco diablo">
+          <h2 class="results__title">Villas at poco diablo</h2></a>
+        <p>Апартаменты от 2000 р</p>
+        <a class="results__link--details" href="#">Подробнее</a>
+        <a class="results__link--reserv" href="#">Забронировать</a>
+        <p class="results__rating">Рейтинг: 9.2</p>
       </div>
     </main>
 <!-- Подвал -->
-    <footer class="footer-page">
-      <div class="footer-page__container">
-        <div class="footer-page__hashtag">
-          <p class="footer-page__hashtag-name"><a href="#">#VisitSedona</a></p>
+    <footer class="footer">
+      <div class="container">
+        <div class="hashtag">
+          <a class="hashtag__link--VisitSedona" href="#">#VisitSedona</a>
         </div>
-        <div class="footer-page__social">
-          <a class="btn-social__twitter" href="#">twitter</a>
-          <a class="btn-social__facebook" href="#">facebook</a>
-          <a class="btn-social__youtube" href="#">youtube</a>
+        <div class="social">
+          <a class="social__link--twitter" href="#">twitter</a>
+          <a class="social__link--facebook" href="#">facebook</a>
+          <a class="social__link--youtube" href="#">youtube</a>
         </div>
-        <div class="footer-page__copyright">
-          <p>Website by<a class="footer-page__copyright-item" href="#">html academy</a></p>
+        <div class="copyright">
+          <p>Website by<a class="copyright__link--academy" href="#">html academy</a></p>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
-
-

@@ -7,158 +7,138 @@
   </head>
   <body>
 <!-- Шапка -->
-    <header class="page-header">
-      <div class="page-header__container">
-        <nav class="main-navigation">
-          <ul class="main-list">
-            <li class="main-list__item">
-              <a class="main-list__link" href="#">Информация</a>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Информация</a>
             </li>
-            <li class="main-list__item">
-              <a class="main-list__link" href="#">Фото и видео</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Фото и видео</a>
             </li>
-            <li class="main-list__item">
-              <a class="main-list__link" href="#">Карта штата</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Карта штата</a>
             </li>
-            <li class="main-list__item">
-              <a class="main-list__link" href="catalog.html">Гостиницы</a>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
-        <div class="logo">
-          <a href="#">
-            <img src="http://placehold.it/150x100" alt="Логотип">
-          </a>
-        </div>
+          <img class="nav__logo" src="img/logo-pict-triangle.png" width="138" height="70" alt="Логотип">
       </div>
     </header>
 <!-- Содержимое -->
-		<main class="page-main">
-      <div class="page-main__container">
-        <div class="picture">
-				    <img class="page-picture__top" src="http://placehold.it/150x100" alt="Welcom -to thegorgeous-">
-            <img class="page-picture__middle" src="http://placehold.it/150x100" alt="Sedona">
-            <img class="page-picture__bottom" src="http://placehold.it/150x100" alt="Because the Grand Canyon sucks">
+		<main class="main">
+      <div class="container">
+        <div class="welcome">
+				  <img class="welcome__img--top" src="img/welcome-pict.png" width="256" height="86" alt="Welcom -to the gorgeous-">
+          <img class="welcome__img--middle" src="img/sedona-pict.png" width="458" height="78" alt="Sedona">
+          <img class="welcome__img--bottom" src="img/grand-canyon-pict.png" width="296" height="80" alt="Because the Grand Canyon sucks">
         </div>
   <!-- Вступление -->
 			  <div class="intro">
-    		  <h2 class="intro-name">Седона - Небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-				  <p class="intro-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    		  <h1 class="intro__title">Седона — Небольшой городок в Аризоне, заслуживающий большего!</h1>
+				  <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     	  </div>
   <!-- Первый ряд картинка город -->
-    	  <div class="reason">
-    		  <div class="reason-item">
-    			  <b class="reason-name">Настоящий Городок</b>
-					  <p>— №1 —</p>
-					  <p>Седона не атракцион для туристов, там течет своя жизнь</p>
-    		  </div>
-    		  <div class="reason-picture">
-					  <img src="http://placehold.it/150x100" alt="Hotel">
-    		  </div>
+    	  <div class="statement clearfix">
+          <div class="statement__content">
+    			  <h2 class="statement__content--title">Настоящий Городок</h2>
+            <p>— №1 —</p>
+            <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="statement__img">
+					  <img class="statement__img--town" src="img/sedona-town-photo-img.jpg" width="800" height="256" alt="Hotel">
+          </div>
     	  </div>
   <!-- Второй ряд с советами -->
-    	  <div class="advice">
-    		  <div class="advice-item">
-    			  <b class="advice-name">Жилье</b>
+    	  <div class="advice clearfix">
+    		  <div class="advice__house">
+    			  <h2 class="advice__house--title">Жилье</h2>
 					  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
     		  </div>
-    		  <div class="advice-item">
-    			  <b class="advice-name">Еда</b>
+    		  <div class="advice__burger">
+    			  <h2 class="advice__burger--title">Еда</h2>
 					  <p>Всегда заказывайте фирменный бургер, вы не разочаруйетесь!</p>
     		  </div>
-    		  <div class="advice-item">
-    			  <b class="advice-name">Сувениры</b>
+    		  <div class="advice__Souvenirs">
+    			  <h2 class="advice__Souvenirs--title">Сувениры</h2>
 					  <p>Не только китайского, но и местного производства!</p>
     		  </div>
 			  </div>
-  <!-- Третий ряд картинка каньон-->
-    	  <div class="reason">
-				  <div class="reason-picture">
-					  <img src="http://placehold.it/150x100" alt="Canyon">
-    		  </div>
-    		  <div class="reason-item">
-    			  <b class="reason-name">Там есть Мост Дьявола</b>
+  <!-- Третий ряд картинка Мост Дьявола-->
+    	  <div class="statement clearfix">
+          <div class="statement__img">
+					  <img class="statement__img--bridge" src="img/devil's-bridge-photo-img.jpg" width="800" height="256" alt="Canyon">
+          </div>
+          <div class="statement__content">
+    			  <h2 class="statement__content--title">Там есть Мост Дьявола</h2>
 					  <p>— №2 —</p>
 					  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-				  </div>
+          </div>
 			  </div>
   <!-- Четвертый ряд текст-->
-			  <div class="vision">
-				  <div class="vision-item">
-					  <b class="vision-name">Небольшая площадь</b>
+			  <div class="vision clearfix">
+				  <div class="vision__item">
+					  <h2 class="vision__item--title">Небольшая площадь</h2>
 					  <p>— №3 —</p>
 					  <p>ВСЕ достопримечательности находятся очень близко</p>
 				  </div>
-				  <div class="vision-item">
-					  <b class="vision-name">Красивая дорога</b>
+				  <div class="vision__item">
+					  <h2 class="vision__item--title">Красивая дорога</h2>
 					  <p>— №4 —</p>
 					  <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
 				  </div>
-				  <div class="vision-item">
-					  <b class="vision-name">>Мало туристов</b>
+				  <div class="vision__item">
+					  <h2 class="vision__item--title">Мало туристов</h2>
             <p>— №5 —</p>
 					  <p>Большинство едет в Гранд Каньон и толпится там</p>
 				  </div>
     	  </div>
   <!-- Прилюдия формы -->
     	  <div class="interest">
-    		  <div class="interest-title">
-    			  <b class="interest-name">Заинтересовались?</b>
-					  <p class="interest-paragraph">Укажите предполагаемые даты поездки, 
-						и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				  </div>
-			  </div>
-	<!-- Форма -->
-			  <div class="form">
-        	<div class="form-title">
-					  <button class="form-btn__show-form" type="button">Поиск гостиницы в Седоне</button>
-					</div>
-          <form action="https://echo.htmlacademy.ru" method="post">
-        	  <div>
-						  <label class="form-text__name">Дата заезда
-						   <input class="form-text__input" type="text" name="check-in" id="check-in" value="24 апреля 2017">
-						  </label><br>
-          	  <label class="form-text__name">Дата выезда
-          	    <input class="form-text__input" type="text" name="departure" id="departure" value="4 июля 2017">
-          	  </label><br>
-          	  <label class="form-text__name">Взрослые
-          	    <input class="form-text__input" type="text" name="adults" id="adults" value="2">
+    			<h3 class="interest__title">Заинтересовались?</h3>
+					<p class="interest__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<button class="interest__btn--showform" type="button">Поиск гостиницы в Седоне</button>
+				</div>
+  <!-- Форма и карта на фоне-->
+        <div class="map">
+          <div class="form">
+            <form action="https://echo.htmlacademy.ru" method="post">
+					    <label class="form__label">Дата заезда
+						    <input class="form__input" type="text" name="check-in" id="check-in" value="24 апреля 2017">
+					    </label>
+          	  <label class="form__label">Дата выезда
+          	    <input class="form__input" type="text" name="departure" id="departure" value="4 июля 2017">
           	  </label>
-          	  <label class="form-text__name">Дети
-          	    <input class="form-text__input" type="text" name="children" id="children" value="0">
+          	  <label class="form__label">Взрослые
+          	    <input class="form__input" type="number" name="adults" id="adults" value="2">
+          	  </label>
+          	  <label class="form__label">Дети
+          	    <input class="form__input" type="number" name="children" id="children" value="0">
               </label>
-					  </div>
-            <div class="form-btn__submit">
 					    <input type="submit" value="Найти">
-            </div>
-          </form>
-    	  </div>
-  <!-- Карта картинка -->
-    	  <div class="map">
-				  <div class="map-img">
-            <img src="http://placehold.it/150x100" alt="Карта">
-				  </div>
-			  </div>
+            </form>
+    	    </div>
+        </div>
       </div>
     </main>
 <!-- Подвал -->
-	  <footer class="footer-page">
-      <div class="footer-page__container">
-        <div class="footer-page__hashtag">
-          <p class="footer-page__hashtag-name"><a href="#">#VisitSedona</a></p>
+	  <footer class="footer">
+      <div class="container">
+        <div class="hashtag">
+          <a class="hashtag__link--VisitSedona" href="#">#VisitSedona</a>
         </div>
-        <div class="footer-page__social">
-          <a class="btn-social__twitter" href="#">twitter</a>
-          <a class="btn-social__facebook" href="#">facebook</a>
-          <a class="btn-social__youtube" href="#">youtube</a>
+        <div class="social">
+          <a class="social__link--twitter" href="#">twitter</a>
+          <a class="social__link--facebook" href="#">facebook</a>
+          <a class="social__link--youtube" href="#">youtube</a>
         </div>
-        <div class="footer-page__copyright">
-          <p>Website by<a class="footer-page__copyright-item" href="#">html academy</a></p>
+        <div class="copyright">
+          <p>Website by<a class="copyright__link--academy" href="#">html academy</a></p>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
-
-
