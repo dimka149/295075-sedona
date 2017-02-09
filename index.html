@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Главная Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -24,17 +26,17 @@
               <a class="nav__link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
+          <a>
+            <img class="logo" src="img/logo-pict-triangle.png" width="138" height="70" alt="Логотип">
+          </a>
         </nav>
-          <img class="logo" src="img/logo-pict-triangle.png" width="138" height="70" alt="Логотип">
       </div>
     </header>
 <!-- Содержимое -->
     <main class="main">
       <div class="container">
         <div class="welcome">
-          <img class="welcome__img-top" src="img/welcome-pict.png" width="256" height="86" alt="Welcom -to the gorgeous-">
-          <img class="welcome__img-middle" src="img/sedona-pict.png" width="458" height="78" alt="Sedona">
-          <img class="welcome__img-bottom" src="img/grand-canyon-pict.png" width="296" height="80" alt="Because the Grand Canyon sucks">
+          <img class="welcome__img" src="img/welcom-sedona-intro-pict.png" width="458" height="352" alt="Welcom to the SEDONA">
         </div>
   <!-- Вступление -->
         <div class="intro">
@@ -43,79 +45,94 @@
         </div>
   <!-- Первый ряд картинка город -->
         <div class="statement clearfix">
-          <div class="statement__content">
-            <h2 class="statement__title">Настоящий Городок</h2>
+          <div class="statement__town">
+            <h2 class="statement__title-town">Настоящий
+            <br>
+            Городок</h2>
             <p>— №1 —</p>
-            <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+            <p class="statement__paragraph-town">Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="statement__img">
-            <img class="statement__img-town" src="img/sedona-town-photo-img.jpg" width="800" height="256" alt="Hotel">
+          <div class="statement__img-town">
+            <img src="img/sedona-town-photo-img.jpg" width="800" height="256" alt="Hotel">
           </div>
         </div>
   <!-- Второй ряд с советами -->
         <div class="advice clearfix">
-          <div class="advice__house">
-            <h2 class="advice__house-title">Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <div class="advice__item house-item">
+            <h2 class="advice__item-title">Жилье</h2>
+            <p class="advice__item-paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="advice__burger">
-            <h2 class="advice__burger-title">Еда</h2>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруйетесь!</p>
+          <div class="advice__item burger-item">
+            <h2 class="advice__item-title">Еда</h2>
+            <p class="advice__item-paragraph">Всегда заказывайте фирменный бургер, вы не разочаруйетесь!</p>
           </div>
-          <div class="advice__Souvenirs">
-            <h2 class="advice__Souvenirs-title">Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
+          <div class="advice__item Souvenirs-item">
+            <h2 class="advice__item-title">Сувениры</h2>
+            <p class="advice__item-paragraph">Не только китайского, но и местного производства!</p>
           </div>
         </div>
   <!-- Третий ряд картинка Мост Дьявола-->
         <div class="statement clearfix">
-          <div class="statement__img">
-            <img class="statement__img-bridge" src="img/devil's-bridge-photo-img.jpg" width="800" height="256" alt="Canyon">
+          <div class="statement__img-bridge">
+            <img src="img/devil's-bridge-photo-img.jpg" width="800" height="256" alt="Canyon">
           </div>
-          <div class="statement__content">
-            <h2 class="statement__content-title">Там есть Мост Дьявола</h2>
+          <div class="statement__bridge">
+            <h2 class="statement__title-bridge">Там есть
+            <br>
+            Мост Дьявола</h2>
             <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="statement__paragraph-bridge">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
   <!-- Четвертый ряд текст-->
         <div class="vision clearfix">
           <div class="vision__item">
-            <h2 class="vision__item-title">Небольшая площадь</h2>
+            <h2 class="vision__item-title">
+            Небольшая
+            <br>
+            площадь</h2>
             <p>— №3 —</p>
-            <p>ВСЕ достопримечательности находятся очень близко</p>
+            <p class="vision__item-paragraph">ВСЕ достопримечательности находятся очень близко</p>
           </div>
           <div class="vision__item">
-            <h2 class="vision__item-title">Красивая дорога</h2>
+            <h2 class="vision__item-title">
+            Красивая
+            <br>
+            дорога</h2>
             <p>— №4 —</p>
-            <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+            <p class="vision__item-paragraph">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
           </div>
           <div class="vision__item">
-            <h2 class="vision__item-title">Мало туристов</h2>
+            <h2 class="vision__item-title">
+            Мало
+            <br>
+            туристов</h2>
             <p>— №5 —</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="vision__item-paragraph">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
   <!-- Прилюдия формы -->
-        <div class="interest">
+        <div class="interest clearfix">
           <h3 class="interest__title">Заинтересовались?</h3>
-          <p class="interest__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="interest__paragraph">Укажите предполагаемые даты поездки,
+          <br>
+          и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="interest__btn--showform" type="button">Поиск гостиницы в Седоне</button>
         </div>
   <!-- Форма и карта на фоне-->
-        <div class="map">
+        <div class="map" id="map">
           <div class="form">
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label class="form__label">Дата заезда
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label class="form__label form__label-in">Дата заезда:
                 <input class="form__input" type="text" name="check-in" id="check-in" value="24 апреля 2017">
               </label>
-              <label class="form__label">Дата выезда
+              <label class="form__label form__label-out">Дата выезда:
                 <input class="form__input" type="text" name="departure" id="departure" value="4 июля 2017">
               </label>
-              <label class="form__label">Взрослые
+              <label class="form__label form__label-bigman">Взрослые:
                 <input class="form__input" type="number" name="adults" id="adults" value="2">
               </label>
-              <label class="form__label">Дети
+              <label class="form__label form__label-littleman">Дети:
                 <input class="form__input" type="number" name="children" id="children" value="0">
               </label>
                 <input type="submit" value="Найти">
@@ -126,19 +143,35 @@
     </main>
 <!-- Подвал -->
     <footer class="footer">
-      <div class="container">
-        <div class="hashtag">
-          <a class="hashtag__link-visitsedona" href="#">#VisitSedona</a>
+      <div class="container clearfix">
+        <div class="footer__hashtag">
+          <a class="footer__hashtag-link" href="#">#VisitSedona</a>
         </div>
-        <div class="social">
-          <a class="social__link-twitter" href="#">twitter</a>
-          <a class="social__link-facebook" href="#">facebook</a>
-          <a class="social__link-youtube" href="#">youtube</a>
+        <div class="footer__social">
+          <a class="footer__social-btn social__btn-tw" href="#">twitter</a>
+          <a class="footer__social-btn social__btn-fb" href="#">facebook</a>
+          <a class="footer__social-btn social__btn-yt" href="#">youtube</a>
         </div>
-        <div class="copyright">
-          <p>Website by<a class="copyright__link--academy" href="#">html academy</a></p>
+        <div class="footer__copyright">
+          <span>Website by</span><a class="footer__copyright-link" href="https://htmlacademy.ru/">html academy</a>
         </div>
       </div>
     </footer>
+    <div class="container-w3c clearfix">
+      <p class="w3c-blue">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Правильный CSS!">
+        </a>
+      </p>
+      <p class="w3c-yellow">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss"
+          alt="Правильный CSS!">
+        </a>
+      </p>
+    </div>
   </body>
 </html>
