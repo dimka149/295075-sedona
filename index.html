@@ -10,7 +10,7 @@
   <body>
 <!-- Шапка -->
     <header class="header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -20,10 +20,10 @@
               <a class="nav__link" href="#">Фото и видео</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Карта штата</a>
+              <a class="nav__link" href="catalog.html">Гостиницы</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Гостиницы</a>
+              <a class="nav__link" href="#">Карта штата</a>
             </li>
           </ul>
           <a>
@@ -34,7 +34,7 @@
     </header>
 <!-- Содержимое -->
     <main class="main">
-      <div class="container">
+      <div class="container clearfix">
         <div class="welcome">
           <img class="welcome__img" src="img/welcom-sedona-intro-pict.png" width="458" height="352" alt="Welcom to the SEDONA">
         </div>
@@ -125,15 +125,21 @@
             <form action="https://echo.htmlacademy.ru" method="get">
               <label class="form__label form__label-in">Дата заезда:
                 <input class="form__input" type="text" name="check-in" id="check-in" value="24 апреля 2017">
+                <span class="form__calendar"></span>
               </label>
               <label class="form__label form__label-out">Дата выезда:
                 <input class="form__input" type="text" name="departure" id="departure" value="4 июля 2017">
+                <span class="form__calendar"></span>
               </label>
               <label class="form__label form__label-bigman">Взрослые:
+                <span class="form__minus-big"></span>
                 <input class="form__input" type="number" name="adults" id="adults" value="2">
+                <span class="form__plus-big"></span>
               </label>
               <label class="form__label form__label-littleman">Дети:
+                <span class="form__minus-litle"></span>
                 <input class="form__input" type="number" name="children" id="children" value="0">
+                <span class="form__plus-litle"></span>
               </label>
                 <input type="submit" value="Найти">
             </form>
@@ -148,30 +154,15 @@
           <a class="footer__hashtag-link" href="#">#VisitSedona</a>
         </div>
         <div class="footer__social">
-          <a class="footer__social-btn social__btn-tw" href="#">twitter</a>
-          <a class="footer__social-btn social__btn-fb" href="#">facebook</a>
-          <a class="footer__social-btn social__btn-yt" href="#">youtube</a>
+          <a class="footer__social-btn footer__social-btn--tw" href="#">twitter</a>
+          <a class="footer__social-btn footer__social-btn--fb" href="#">facebook</a>
+          <a class="footer__social-btn footer__social-btn--yt" href="#">youtube</a>
         </div>
         <div class="footer__copyright">
           <span>Website by</span><a class="footer__copyright-link" href="https://htmlacademy.ru/">html academy</a>
         </div>
       </div>
     </footer>
-    <div class="container-w3c clearfix">
-      <p class="w3c-blue">
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">
-          <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="Правильный CSS!">
-        </a>
-      </p>
-      <p class="w3c-yellow">
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">
-          <img style="border:0;width:88px;height:31px"
-          src="http://jigsaw.w3.org/css-validator/images/vcss"
-          alt="Правильный CSS!">
-        </a>
-      </p>
-    </div>
+    <script src="js/popup.js"></script>
   </body>
 </html>
