@@ -44,13 +44,16 @@ h3 {
 
 /*----------Шапка---------*/
 
+.nav {
+  position: relative;
+}
+
 .nav__list {
   min-height: 56px;
   margin: 0;
   padding: 0;
   font-size: 0;
   list-style: none;
-  position: relative;
 }
 
 .nav__item {
