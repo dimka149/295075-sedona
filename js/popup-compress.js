@@ -1,0 +1,1 @@
+var link=document.querySelector(".interest__btn--showform"),popup=document.querySelector(".form"),close=document.querySelector(".interest__btn--showform");close.addEventListener("click",function(a){a.preventDefault(),popup.classList.toggle("form-no-show")}),link.addEventListener("click",function(a){a.preventDefault(),popup.classList.toggle("form")});
