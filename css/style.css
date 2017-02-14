@@ -90,6 +90,7 @@ h3 {
 .nav__link {
   display: inline-block;
   vertical-align: top;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin-top: 15px;
   max-width: 240px;
   text-decoration: none;
@@ -254,7 +255,7 @@ h3 {
   background-position: -1px -1px;
 }
 
-.Souvenirs-item::before {
+.souvenirs-item::before {
   content: "";
   position: absolute;
   bottom: 60%;
@@ -350,8 +351,9 @@ h3 {
 .interest__btn--showform {
   position: absolute;
   border: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
-  line-height: 1.238;
+  line-height: 1.24;
   font-weight: bold;
   width: 568px;
   height: 86px;
@@ -366,7 +368,7 @@ h3 {
 /*--------------------------*/
 
 .map {
-  height: 473px;
+  height: 593px;
   background:
     rgba(238, 238, 238, 1) url("../img/map-img.jpg")
       top no-repeat;
@@ -612,6 +614,7 @@ h3 {
   padding: 0;
   width: 458px;
   height: 58px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 1.24;
   font-weight: bold;
@@ -632,10 +635,16 @@ h3 {
 
 /*--------------------------*/
 
+.footer .container-index {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0;
+  margin: 0 auto;
+  margin-top: -120px;
+}
+
 .footer a {
   text-decoration: none;
   color: #000000;
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer__hashtag {
@@ -955,6 +964,7 @@ h3 {
   display: block;
   margin: 0 auto;
   padding: 6px 30px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
