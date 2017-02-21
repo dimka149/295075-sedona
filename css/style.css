@@ -369,12 +369,9 @@ body {
   height: 593px;
   margin: 0;
   padding: 0;
-  background-color: rgb(238, 238, 238);
-}
-
-.map__link {
-  text-decoration: none;
-  color: transparent;
+  background:
+    rgb(238, 238, 238) url("../img/map-img.jpg")
+      no-repeat;
 }
 
 /*--------------------------*/
